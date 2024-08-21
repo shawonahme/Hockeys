@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0b98de5bb1.js" crossorigin="anonymous"></script>
+
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,9 +21,231 @@
 </head>
 <body class="manrope">
     <!-- header start here  -->
-    <head></head>
+    <header class="md:w-[80%] mx-auto  ">
+        <!-- nav bar start here  -->
+        <div class="navbar  bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-full p-2 ">
+                  <ul class="menu text-[Dark 02] menu-horizontal px-1 bg-white rounded-md ">
+                    <li class="hover:text-[#FF4240]  transform-all"><a>Home</a></li>
+                    <li class="hover:text-[#FF4240]  transform-all"><a>About</a></li>
+                    <li class="hover:text-[#FF4240]  transform-all"><a>Pages</a></li>
+                    <li class="hover:text-[#FF4240]  transform-all"><a>Blog</a></li>
+                    <li class="hover:text-[#FF4240]  transform-all"><a>Contact</a></li>
+                  </ul>
+                </ul>
+              </div>
+              <a class=" font-bold text-[#131318] text-2xl">Hockey<span class="text-[#FF4240]">’</span>S</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal  px-1">
+                <li class="hover:text-[#FF4240]   transform-all"><a>Home</a></li>
+                <li class="hover:text-[#FF4240]  transform-all"><a>About</a></li>
+                <li class="hover:text-[#FF4240]  transform-all"><a>Pages</a></li>
+                <li class="hover:text-[#FF4240]  transform-all"><a>Blog</a></li>
+                <li class="hover:text-[#FF4240]  transform-all"><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="mr-4"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #89898B;"></i></a>
+              <a class="bg-[#FF4240] py-2 px-4 text-white rounded-md font-semibold cursor-pointer transition-all border-2 border-[#FF4240] hover:border-[#FF4240] hover:text-[#FF4240] hover:bg-transparent">Get Ticket</a>
+            </div>
+          </div>
+          <!-- nav bar end here  -->
+           <!-- bannar start here  -->
+           <div class="carousel w-full h-[65vh] md:h-[80vh] ">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src="./Images/1.png"
+                class="w-full" />
+                <div class="absolute left-5 right-5 bottom-5 flex gap-2 transform justify-center md:justify-start">
+                    <a href="#slide2" class=" w-[2rem] h-[2rem] text-center items-center flex justify-center rounded-full bg-black text-gray-300">❮</a>
+                    <a href="#slide2"  class=" w-[2rem] h-[2rem] text-center items-center flex justify-center rounded-full bg-black text-gray-300">❯</a>
+                  </div>
+                  <div class="absolute hidden  md:block md:w-[35%] bg-black right-5 md:bottom-5    py-4 px-3 rounded-md gap-2 transform justify-center md:justify-start">
+                   <h1 class="text-white text-xl pb-1">Meet all the heroes from the field</h1>
+                   <p class="text-gray-400 text-[.9rem] ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                 
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full" />
+                <div class="absolute left-5 right-5 bottom-5 flex gap-2 transform justify-center md:justify-start">
+                    <a href="#slide1" class=" w-[2rem] h-[2rem] text-center items-center flex justify-center rounded-full bg-black text-gray-300">❮</a>
+                    <a href="#slide3"  class=" w-[2rem] h-[2rem] text-center items-center flex justify-center rounded-full bg-black text-gray-300">❯</a>
+                  </div>
+                  <div class="absolute hidden  md:block md:w-[35%] bg-black right-5 md:bottom-5    py-4 px-3 rounded-md gap-2 transform justify-center md:justify-start">
+                   <h1 class="text-white text-xl pb-1">Meet all the heroes from the field</h1>
+                   <p class="text-gray-400 text-[.9rem] ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                 
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full" />
+                <div class="absolute left-5 right-5 bottom-5 flex gap-2 transform justify-center md:justify-start">
+                    <a href="#slide2" class=" w-[2rem] h-[2rem] text-center items-center flex justify-center rounded-full bg-black text-gray-300">❮</a>
+                    <a href="#slide4"  class=" w-[2rem] h-[2rem] text-center items-center flex justify-center rounded-full bg-black text-gray-300">❯</a>
+                  </div>
+                  <div class="absolute hidden  md:block md:w-[35%] bg-black right-5 md:bottom-5    py-4 px-3 rounded-md gap-2 transform justify-center md:justify-start">
+                   <h1 class="text-white text-xl pb-1">Meet all the heroes from the field</h1>
+                   <p class="text-gray-400 text-[.9rem] ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                 
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full" />
+                <div class="absolute left-5 right-5 bottom-5 flex gap-2 transform justify-center md:justify-start">
+                    <a href="#slide3" class=" w-[2rem] h-[2rem] text-center items-center flex justify-center rounded-full bg-black text-gray-300">❮</a>
+                    <a href="#slide1"  class=" w-[2rem] h-[2rem] text-center items-center flex justify-center rounded-full bg-black text-gray-300">❯</a>
+                  </div>
+                  <div class="absolute hidden  md:block md:w-[35%] bg-black right-5 md:bottom-5    py-4 px-3 rounded-md gap-2 transform justify-center md:justify-start">
+                   <h1 class="text-white text-xl pb-1">Meet all the heroes from the field</h1>
+                   <p class="text-gray-400 text-[.9rem] ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                 
+                </div>
+            </div>
+          </div>
+          <div class=" mx-auto md:hidden   md:w-[35%] bg-black     py-6 px-6 rounded-md gap-2 transform justify-center md:justify-start">
+            <h1 class="text-white text-xl pb-1">Meet all the heroes from the field</h1>
+            <p class="text-gray-400 text-[.9rem]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          
+        </div>
+        
+            <!-- bannar end here  -->
+
+
+    </header>
+    <!-- main start here  -->
+    <main class="md:w-[80%] mx-auto">
+        <!-- hockey club section start here  -->
+         <section>
+            <!-- heading section  start -->
+            <div class="text-center md:w-[60%] w-[90% ] mx-auto my-12">
+                <h1 class="text-4xl font-bold my-4">Professional Hockeys Club</h1>
+                <p class="text-gray-500 w-[80%] md:[70%] mx-auto">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                </p>
+            </div>
+            <!-- heading section end  -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="text-center py-4">
+                    <div class="radial-progress text-[#FF4240] " style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="font-bold pt-3 pb-2" >Prayer Facility</h3>
+                  <p class="text-gray-500 text-sm w-[70%] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="text-center py-4">
+                    <div class="radial-progress text-[#49D293] " style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="font-bold pt-3 pb-2" >Experienced Coach</h3>
+                  <p class="text-gray-500 text-sm w-[70%] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="text-center py-4">
+                    <div class="radial-progress text-[#FFB546] " style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="font-bold pt-3 pb-2" >Senior Player</h3>
+                  <p class="text-gray-500 text-sm w-[70%] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="text-center py-4">
+                    <div class="radial-progress text-[#4C8DF1] " style="--value:80;" role="progressbar">8%</div>
+                    <h3 class="font-bold pt-3 pb-2" >Training Ground</h3>
+                  <p class="text-gray-500 text-sm w-[70%] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+         </section>
+        <!-- hockey club section end here  -->
+         <!-- program section start here  -->
+
+         <section>
+             <!-- heading section  start -->
+             <div class="text-center md:w-[60%] w-[90% ] mx-auto my-12">
+                <h1 class="text-4xl font-bold my-4">Program Sections</h1>
+                <p class="text-gray-500 w-[80%] md:[70%] mx-auto">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                </p>
+            </div>
+            <!-- heading section end  -->
+
+            <div class="w-[100%]   mx-auto grid md:grid-cols-2 md:grid-row-2  gap-4">
+                <div class="card bg-base-100 image-full   shadow-xl">
+                    <figure>
+                      <img
+                        src="./Images/2.png"
+                        alt="Shoes" class="w-full" />
+                    </figure>
+                    <div class="card-body justify-end  text-white">
+                      <h2 class="card-title">Junior Program</h2>
+                      <p class="flex-grow-0">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                      <div class="card-actions ">
+                        <button class="btn bg-[#FF4240] border-0 text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-base-100 image-full     shadow-xl">
+                    <figure>
+                      <img
+                        src="./Images/3.png"
+                        alt="Shoes" class="w-full" />
+                    </figure>
+                    <div class="card-body justify-end  text-white">
+                      <h2 class="card-title">Junior Program</h2>
+                      <p class="flex-grow-0">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                      <div class="card-actions ">
+                        <button class="btn bg-[#FF4240] border-0 text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-base-100 image-full shadow-xl md:col-span-2 md:row-span-1">
+                    <figure>
+                      <img
+                        src="./Images/4.png"
+                        alt="Shoes" class="w-full" />
+                    </figure>
+                    <div class="card-body justify-end  text-white">
+                      <h2 class="card-title">Junior Program</h2>
+                      <p class="flex-grow-0 md:w-[60%]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                      <div class="card-actions ">
+                        <button class="btn bg-[#FF4240] border-0 text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+         </section>
+         <!-- program section end here  -->
+    </main>
+
+    <!-- main end here  -->
+
+
+    
      <!-- header end here  -->
 
   
 </body>
 </html>
+
+
+
